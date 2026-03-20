@@ -6,7 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videografiya</title>
     <style>
-      * { margin: 0; padding: 0; box-sizing: border-box; } body { overflow-x: hidden; } .hero { padding-top: 8px; padding-bottom: 24px; } .container { max-width: 320px; margin: 0 auto; padding: 0 10px; position: relative; } .hero__top { display: flex; align-items: center; justify-content: space-between; max-width: 300px; width: 100%; background-color: #FF407F; border-radius: 8px; color: white; position: relative; z-index: 1; padding: 9px 16px; margin-bottom: 12px; } .hero__top-min { display: flex; align-items: center; gap: 4px; } .hero__top-min p { font-family: Caros, sans-serif; font-weight: 400; font-size: 12px; line-height: 100%; text-align: center; } .hero__title { font-family: Buyan, sans-serif; font-weight: 700; font-size: 42px; line-height: 110%; text-align: center; position: relative; z-index: 1; margin-bottom: 5px; } .hero__title span { color: #FF407F; } .hero__text { font-family: Manrope, sans-serif; font-weight: 400; font-size: 14px; line-height: 140%; text-align: center; margin-bottom: 10px; position: relative; z-index: 1; } .hero__images { max-width: 300px; width: 100%; height: auto; position: relative; z-index: 1; margin: 0 auto; display: flex; align-items: center; justify-content: center; } .hero__bg { margin: 0 auto; position: absolute; top: -0px; left: 50%; max-width: 462px; width: 100%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; } .hero__btn { max-width: 268px; width: 100%; border-radius: 13px; font-family: Buyan, sans-serif; font-weight: 700; font-size: 27px; line-height: 100%; background-image: url(./images/btn.avif); background-repeat: no-repeat; background-size: contain; cursor: pointer; background-position: center; margin: 0 auto; display: flex; align-items: center; justify-content: center; text-transform: uppercase; height: 75px; border: none; padding: 21px 0; color: #4C3A1E; } .button { max-width: 268px; width: 100%; box-shadow: 0px 3px 30px 0px #FDC56C80; padding: 25px 0 27px 0; font-family: Buyan, sans-serif; font-weight: 700; font-size: 22px; line-height: 100%; text-transform: uppercase; color: #644E2C; border-radius: 13px; border: none; margin: 0 auto; display: flex; align-items: center; justify-content: center; background-color: #BD8530; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        .hero {
+            padding-top: 8px;
+            padding-bottom: 24px;
+        }
+
+        .container {
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 0 10px;
+            position: relative;
+        }
+
+        .hero__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 300px;
+            width: 100%;
+            background-color: #FF407F;
+            border-radius: 8px;
+            color: white;
+            position: relative;
+            z-index: 1;
+            padding: 9px 16px;
+            margin-bottom: 12px;
+        }
+
+        .hero__top-min {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .hero__top-min p {
+            font-family: Caros, sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 100%;
+            text-align: center;
+        }
+
+        .hero__title {
+            font-family: Buyan, sans-serif;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 110%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 5px;
+        }
+
+        .hero__title span {
+            color: #FF407F;
+        }
+
+        .hero__text {
+            font-family: Manrope, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero__images {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 1;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero__bg {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .hero_bgs {
+            position: absolute;
+            top: 190px;
+            right: -28px;
+        }
+
+        .hero_bgss {
+            position: absolute;
+            top: 275px;
+            right: -28px;
+        }
+
+        .hero__btn {
+            max-width: 268px;
+            width: 100%;
+            border-radius: 13px;
+            font-family: Buyan, sans-serif;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 100%;
+            background-image: url(./images/btn.avif);
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: pointer;
+            background-color: transparent;
+            background-position: center;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            height: 75px;
+            border: none;
+            z-index: 10;
+            position: relative;
+            padding: 21px 0;
+            color: #4C3A1E;
+        }
+
+        .button {
+            max-width: 268px;
+            width: 100%;
+            box-shadow: 0px 3px 30px 0px #FDC56C80;
+            padding: 25px 0 27px 0;
+            font-family: Buyan, sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #644E2C;
+            border-radius: 13px;
+            border: none;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #BD8530;
+        }
     </style>
     <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'" />
     <noscript>
@@ -15,12 +170,17 @@
 </head>
 
 <body>
- 
+
     <main>
         <section class="hero">
-            <img class="hero__bg" src="./images/bg.png" loading="lazy" decoding="async" width="412" height="506"
-                alt="bg">
+
             <div class="hero__container container">
+                <img class="hero__bg" src="./images/bg.avif" loading="lazy" decoding="async" width="412" height="506"
+                    alt="bg">
+                <img class="hero_bgs" src="./images/bgs.avif" loading="lazy" decoding="async" width="203" height="184"
+                    alt="bg">
+                <img class="hero_bgss" src="./images/icon.avif" loading="lazy" decoding="async" width="202" height="224"
+                    alt="bg">
                 <div class="hero__top">
                     <div class="hero__top-min">
                         <img src="./images/user.png" loading="lazy" decoding="async" width="11" height="12"
@@ -42,6 +202,7 @@
                     height="240" alt="speaker">
 
                 <button class="hero__btn registerBtn">kurs dasturini ko'rish</button>
+
             </div>
         </section>
 
@@ -55,7 +216,9 @@
                             <img style="margin-right: -7px;" src="./images/info/1.avif" loading="lazy" decoding="async"
                                 width="214" height="216" alt="woman img">
                         </div>
-                        <div style="background-color: black; max-width: 184px; width: 100%; height: 50px; filter: blur(20px); position: absolute; top: 130px;"></div>
+                        <div
+                            style="background-color: black; max-width: 184px; width: 100%; height: 50px; filter: blur(20px); position: absolute; top: 130px;">
+                        </div>
                         <h3>Mobilograf</h3>
                         <p>Agar siz Kontentini <br> professional darajaga olib <br> chiqib, <b>daromadingizni <br>
                                 ko‘paytirmoqchi bo'lsangiz</b>
@@ -66,7 +229,9 @@
                             <img src="./images/info/2.avif" loading="lazy" decoding="async" width="214" height="216"
                                 alt="woman img">
                         </div>
-                        <div style="background-color: black; max-width: 184px; width: 100%; height: 50px; filter: blur(25px); position: absolute; top: 120px;"></div>
+                        <div
+                            style="background-color: black; max-width: 184px; width: 100%; height: 50px; filter: blur(25px); position: absolute; top: 120px;">
+                        </div>
                         <h3>bloger</h3>
                         <p>Agar siz Profilingizni tartibli <br> <b>sotadigan sahifaga <br> aylantirmoqchi
                                 bo‘lsangiz</b></b>
@@ -77,7 +242,9 @@
                             <img src="./images/info/3.avif" loading="lazy" decoding="async" width="214" height="216"
                                 alt="woman img">
                         </div>
-                        <div style="background-color: black; max-width: 184px; width: 100%; height: 50px; filter: blur(25px); position: absolute; top: 120px;"></div>
+                        <div
+                            style="background-color: black; max-width: 184px; width: 100%; height: 50px; filter: blur(25px); position: absolute; top: 120px;">
+                        </div>
                         <h3>sohada yangilar</h3>
                         <p>Agar siz 2–3 oy ichida <br> daromad olib keladigan <br> <b>zamonaviy kasbga kirib <br>
                                 kelmoqchi
@@ -89,7 +256,9 @@
                             <img src="./images/info/4.avif" loading="lazy" decoding="async" width="214" height="216"
                                 alt="woman img">
                         </div>
-                        <div style="background-color: black; max-width: 184px; width: 100%; height: 50px; filter: blur(25px); position: absolute; top: 120px;"></div>
+                        <div
+                            style="background-color: black; max-width: 184px; width: 100%; height: 50px; filter: blur(25px); position: absolute; top: 120px;">
+                        </div>
                         <h3 style="margin-top: -58px;">Yangi kasb <br> izlayotganlar</h3>
                         <p>Videolar orqali oyiga $500+ <br> passiv <b>daromad qilishni <br> xohlovchilar uchun</b></b>
                         </p>
@@ -154,88 +323,91 @@
                 <h2 class="users__title" style="margin-bottom: 30px;">Kursda nimalarni <br>
                     o'rganasiz?</h2>
 
-                    <div class="learn__row">
-                        <div class="learn__col" style="margin-bottom: 16px;">
-                            <span class="tab-btn active" data-tab="0">0-modul</span>
-                            <span class="tab-btn" data-tab="1">1-modul</span>
-                            <span class="tab-btn" data-tab="2">2-modul</span>
-                        </div>
-                        <div class="learn__col">
-                            <span class="tab-btn" data-tab="3">3-modul</span>
-                            <span class="tab-btn" style="max-width: 99px; width: 100%; white-space: nowrap;" data-tab="4">Bonus dars</span>
-                        </div>
+                <div class="learn__row">
+                    <div class="learn__col" style="margin-bottom: 16px;">
+                        <span class="tab-btn active" data-tab="0">0-modul</span>
+                        <span class="tab-btn" data-tab="1">1-modul</span>
+                        <span class="tab-btn" data-tab="2">2-modul</span>
                     </div>
+                    <div class="learn__col">
+                        <span class="tab-btn" data-tab="3">3-modul</span>
+                        <span class="tab-btn" style="max-width: 99px; width: 100%; white-space: nowrap;"
+                            data-tab="4">Bonus dars</span>
+                    </div>
+                </div>
 
                 <div class="">
-                <div class="learn__info active" data-content="0">
-                    <div class="learn__span" style="margin-bottom: 8px; white-space: nowrap;">0-modul</div>
+                    <div class="learn__info active" data-content="0">
+                        <div class="learn__span" style="margin-bottom: 8px; white-space: nowrap;">0-modul</div>
 
-                    <h3>Texnik asoslar <span>(Fundament)</span></h3>
-                    <ul class="learn__nav">
-                        <li>Kamera va qurilmalarni <br> tushunish. Asosiy elementlar
-                        </li>
-                        <li>Kamerani sozlash sirlari: ISO, <br> APERATURE (diafragma) va <br> shutter speed</li>
-                        <li>Kompozitsiya qoidalari: Kadrni <br> “Qimmat” ko'rsatish san'ati</li>
-                        <li>Kamerani bosqichma-bosqich <br> so'zlash</li>
-                        <li>Yorug'lik bilan ishlash: Tabiiy va <br> sun'iy yoritish tizimlari</li>
-                        <li>Ovoz yozish va mikrofon turlari </li>
-                        <li>Ravon va stabilizatsiya vositalari</li>
-                    </ul>
+                        <h3>Texnik asoslar <span>(Fundament)</span></h3>
+                        <ul class="learn__nav">
+                            <li>Kamera va qurilmalarni <br> tushunish. Asosiy elementlar
+                            </li>
+                            <li>Kamerani sozlash sirlari: ISO, <br> APERATURE (diafragma) va <br> shutter speed</li>
+                            <li>Kompozitsiya qoidalari: Kadrni <br> “Qimmat” ko'rsatish san'ati</li>
+                            <li>Kamerani bosqichma-bosqich <br> so'zlash</li>
+                            <li>Yorug'lik bilan ishlash: Tabiiy va <br> sun'iy yoritish tizimlari</li>
+                            <li>Ovoz yozish va mikrofon turlari </li>
+                            <li>Ravon va stabilizatsiya vositalari</li>
+                        </ul>
+                    </div>
+
+                    <div class="learn__info" data-content="1">
+                        <div class="learn__span" style="margin-bottom: 8px; white-space: nowrap;">1-modul</div>
+
+                        <h3>Yo’nalishlar va Amaliyot</h3>
+                        <ul class="learn__nav">
+                            <li>Portret syomka: Inson <br> hissiyotlarini kadrga muhrlash
+                            </li>
+                            <li>Modelniy va fashion syomka: Harakat va estetika</li>
+                            <li>Ekspertniy va intervyu syomkasi: <br> ishonchli kadr yaratish</li>
+                            <li>Mahsulot va obyekt syomkasi: <br> Sotuvbop vizualizatsiya</li>
+                            <li>Video podkast syomkasi studiya <br> muhiti va ko’p kamerali ish</li>
+                            <li>Makeup va Beauty syomkasi: <br> detallar va ranglar aniqligi</li>
+                        </ul>
+                    </div>
+
+                    <div class="learn__info" data-content="2">
+                        <div class="learn__span" style="margin-bottom: 8px; white-space: nowrap;">2-modul</div>
+
+                        <h3>Montaj va Post prodakshn</h3>
+                        <ul class="learn__nav">
+                            <li>Montaj asoslari: Dinamika va <br> hikoya qilish (storytelling)
+                            </li>
+                            <li>Rang berish (color grading) va <br> sound design</li>
+                            <li>Videografiyada sun’iy intellekt <br> (AI) imkoniyatlari</li>
+                        </ul>
+                    </div>
+
+                    <div class="learn__info" data-content="3">
+                        <div class="learn__span" style="margin-bottom: 8px; white-space: nowrap;">3-modul</div>
+
+                        <h3>Biznes va Daromad <br> (monetizatsiya)</h3>
+                        <ul class="learn__nav">
+                            <li>Portfolio tuzish va showreel yaratish
+                            </li>
+                            <li>Shaxsiy brend va mijoz jalb qilish <br> strategiyasi</li>
+                            <li>Sotuv san’ati: Qimmat narxda <br> sotish va mijoz bilan muloqot</li>
+                            <li>Ish jarayonini boshqarish: <br> Shartnoma va huquqiy himoya</li>
+                            <li>Daromad modeli: Barqaror $1000 <br> daromadga chiqish yo’l xaritasi</li>
+                        </ul>
+                    </div>
+
+                    <div class="learn__info" data-content="4">
+                        <div class="learn__span"
+                            style="margin-bottom: 8px; max-width: 99px; width: 100%; white-space: nowrap;">Bonus dars
+                        </div>
+
+                        <h3>Biznes va Daromad <br> (monetizatsiya)</h3>
+                        <ul class="learn__nav">
+                            <li>Videografning “Quick Start <br> Guide” (Tezkor shporkalkasi)
+                            </li>
+                            <li>Professional videoxizmatlar <br> ko’rsatish shartnomasi (Namuna)</li>
+                            <li>Mijozlar uchun “Brief” <br> (Savolnoma) shabloni</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="learn__info" data-content="1">
-                    <div class="learn__span" style="margin-bottom: 8px; white-space: nowrap;">1-modul</div>
-
-                    <h3>Yo’nalishlar va Amaliyot</h3>
-                    <ul class="learn__nav">
-                        <li>Portret syomka: Inson <br> hissiyotlarini kadrga muhrlash
-                        </li>
-                        <li>Modelniy va fashion syomka: Harakat va estetika</li>
-                        <li>Ekspertniy va intervyu syomkasi: <br> ishonchli kadr yaratish</li>
-                        <li>Mahsulot va obyekt syomkasi: <br> Sotuvbop vizualizatsiya</li>
-                        <li>Video podkast syomkasi studiya <br> muhiti va ko’p kamerali ish</li>
-                        <li>Makeup va Beauty syomkasi: <br> detallar va ranglar aniqligi</li>
-                    </ul>
-                </div>
-
-                <div class="learn__info" data-content="2">
-                    <div class="learn__span" style="margin-bottom: 8px; white-space: nowrap;">2-modul</div>
-
-                    <h3>Montaj va Post prodakshn</h3>
-                    <ul class="learn__nav">
-                        <li>Montaj asoslari: Dinamika va <br> hikoya qilish (storytelling)
-                        </li>
-                        <li>Rang berish (color grading) va <br> sound design</li>
-                        <li>Videografiyada sun’iy intellekt <br> (AI) imkoniyatlari</li>
-                    </ul>
-                </div>
-
-                <div class="learn__info" data-content="3">
-                    <div class="learn__span" style="margin-bottom: 8px; white-space: nowrap;">3-modul</div>
-
-                    <h3>Biznes va Daromad <br> (monetizatsiya)</h3>
-                    <ul class="learn__nav">
-                        <li>Portfolio tuzish va showreel yaratish
-                        </li>
-                        <li>Shaxsiy brend va mijoz jalb qilish <br> strategiyasi</li>
-                        <li>Sotuv san’ati: Qimmat narxda <br> sotish va mijoz bilan muloqot</li>
-                        <li>Ish jarayonini boshqarish: <br> Shartnoma va huquqiy himoya</li>
-                        <li>Daromad modeli: Barqaror $1000 <br> daromadga chiqish yo’l xaritasi</li>
-                    </ul>
-                </div>
-
-                <div class="learn__info" data-content="4">
-                    <div class="learn__span" style="margin-bottom: 8px; max-width: 99px; width: 100%; white-space: nowrap;">Bonus dars</div>
-
-                    <h3>Biznes va Daromad <br> (monetizatsiya)</h3>
-                    <ul class="learn__nav">
-                        <li>Videografning “Quick Start <br> Guide” (Tezkor shporkalkasi)
-                        </li>
-                        <li>Professional videoxizmatlar <br> ko’rsatish shartnomasi (Namuna)</li>
-                        <li>Mijozlar uchun “Brief” <br> (Savolnoma) shabloni</li>
-                    </ul>
-                </div>
-            </div>
                 <button class="hero__btn registerBtn">kursda qatnashaman</button>
             </div>
         </section>
@@ -289,7 +461,7 @@
                         <h4 class="result__title" style="color: #008736; padding-top: 10px;">B nuqtasi:</h4>
 
                         <ul>
-                            <li>Kurs tugamasidan loyiha 
+                            <li>Kurs tugamasidan loyiha
                                 oldi, 1.000$+ daromadga chiqdi</li>
                         </ul>
                     </div>
