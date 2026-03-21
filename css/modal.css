@@ -64,10 +64,11 @@
     border-top-right-radius: 100px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    height: 189px;
 }
 
 .users__col-min img {
-    margin-top: -36px;
+    margin-top: -27px;
     margin-bottom: -5px;
     object-fit: contain;
 }
